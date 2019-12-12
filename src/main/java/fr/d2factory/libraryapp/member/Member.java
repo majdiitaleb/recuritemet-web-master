@@ -16,6 +16,7 @@ public abstract class Member {
      * An initial sum of money the member has
      */
     private float wallet;
+    private boolean isTooLate=false;
 
     private List<Book> borrowedBooks;
     /**
@@ -25,6 +26,7 @@ public abstract class Member {
      */
     public abstract void payBook(long numberOfDays);
 
+    public abstract int limitBorrowBook();
     public Member() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -51,6 +53,15 @@ public abstract class Member {
 		this.borrowedBooks = borrowedBooks;
 	}
 
+	
+	public boolean isTooLate() {
+		return isTooLate;
+	}
+
+	public void setTooLate(boolean isTooLate) {
+		this.isTooLate = isTooLate;
+	}
+
 	public void addBorrowed(Book book) {
 		if (book != null) {
 			if (borrowedBooks == null) {
@@ -59,6 +70,8 @@ public abstract class Member {
 			borrowedBooks.add(book);
 		}
 	}
+	
+
 	
 	public void removeBook(Book book) {
 		

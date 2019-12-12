@@ -48,4 +48,10 @@ public class Student extends Member {
 		return super.toString().concat(" : ").concat("Student [level=" + level + "]");
 	}
 
+	@Override
+	public int limitBorrowBook() {
+		// TODO Auto-generated method stub
+		return 60;
+	}
+
 }

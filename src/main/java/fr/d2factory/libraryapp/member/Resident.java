@@ -36,5 +36,11 @@ public class Resident extends Member {
 		return "Resident [getWallet()=" + getWallet() + ", getBorrowedBooks()=" + getBorrowedBooks() + "]";
 	}
 
+	@Override
+	public int limitBorrowBook() {
+		// TODO Auto-generated method stub
+		return 60;
+	}
+
 	
 }
