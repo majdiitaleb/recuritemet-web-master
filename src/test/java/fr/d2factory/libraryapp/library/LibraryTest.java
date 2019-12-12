@@ -225,7 +225,7 @@ public class LibraryTest {
 		bookRepository.afficherBorrowed();
 		
 	
-		System.out.println("END t6_students_pay_15cents_for_each_day_they_keep_a_book_after_the_initial_30days");
+		System.out.println("END t_8_members_cannot_borrow_book_if_they_have_late_books");
  
 		}
 	 
