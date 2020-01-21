@@ -1,4 +1,4 @@
-# Java Recruitment Exercise
+
 
 This Java exercise aims at your conceptional and problem solving skills in a real world
 problem.
